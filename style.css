@@ -1,0 +1,312 @@
+
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background-color: #f2f5f9;
+    color: #263238;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+
+#header {
+    background:
+        linear-gradient(
+            rgba(15, 39, 66, 0.72),
+            rgba(15, 39, 66, 0.82)
+        ),
+        url("images/hero-car.jpg") center 55% / cover no-repeat;
+    color: white;
+    text-align: center;
+    padding: 45px 20px;
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#header h1 {
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 30px;
+    margin: 0 0 12px;
+    line-height: 1.5;
+}
+
+
+#header p {
+    font-size: 17px;
+    margin: 5px 0;
+}
+
+
+#navigation {
+    background-color: #24476b;
+    text-align: center;
+    padding: 13px 10px;
+}
+
+
+#navigation a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin: 4px 12px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    transition: background-color 0.2s;
+}
+
+
+#navigation a:hover {
+    background-color: #365f89;
+}
+
+
+#content {
+    width: 85%;
+    max-width: 1100px;
+    box-sizing: border-box;
+    margin: 25px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+
+#content h2 {
+    color: #17365d;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    background-color: white;
+}
+
+
+th, td {
+    border: 1px solid #cccccc;
+    padding: 11px 9px;
+    text-align: center;
+}
+
+
+th {
+    background-color: #dce6f1;
+    color: #17365d;
+}
+
+
+tbody tr:hover {
+    background-color: #f3f7fb;
+}
+
+
+table img {
+    max-width: 130px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+#bookingSection {
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #f8fafc;
+    border: 1px solid #d6e0eb;
+    border-radius: 7px;
+}
+
+#bookingForm fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 15px 20px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    padding: 20px;
+    margin: 0 0 20px;
+}
+
+
+#bookingForm legend {
+    color: #17365d;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+
+#bookingForm fieldset p {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+
+#bookingForm label {
+    font-weight: bold;
+    color: #263238;
+}
+
+
+#bookingForm input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #b8c5d3;
+    border-radius: 5px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    background-color: white;
+}
+
+
+#bookingForm input:focus {
+    outline: none;
+    border-color: #24476b;
+}
+
+
+#bookingForm button {
+    background-color: #17365d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 11px 20px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+#bookingForm button:hover {
+    background-color: #24476b;
+}
+
+
+.carDetails {
+    padding: 10px;
+    background-color: #f2f5f9;
+    border-radius: 5px;
+}
+
+
+#footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #17365d;
+    color: white;
+    margin-top: 25px;
+}
+
+
+@media (max-width: 650px) {
+    #header {
+        padding: 30px 15px;
+    }
+
+    #header h1 {
+        font-size: 24px;
+    }
+
+    #content {
+        width: 94%;
+        padding: 15px;
+    }
+
+    #bookingForm fieldset {
+        grid-template-columns: 1fr;
+        padding: 15px;
+    }
+
+    #navigation a {
+        margin: 3px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 7px 5px;
+    }
+}
+
+
+.detailsButton,
+#continueButton {
+    display: inline-block;
+    background-color: #24476b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 9px 15px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+
+.detailsButton:hover,
+#continueButton:hover {
+    background-color: #17365d;
+    transform: translateY(-1px);
+}
+
+
+.detailsButton:active,
+#continueButton:active {
+    transform: translateY(0);
+}
+
+
+#continueButton {
+    background-color: #287a55;
+    padding: 11px 22px;
+    font-size: 15px;
+}
+
+
+#continueButton:hover {
+    background-color: #1f6243;
+}
+
+
+p:has(> #continueButton) {
+    text-align: center;
+    margin: 22px 0;
+}
+
+
+.carDetails {
+    margin-top: 8px;
+    padding: 12px;
+    background-color: #f2f5f9;
+    border: 1px solid #d6e0eb;
+    border-radius: 5px;
+    text-align: right;
+}
+
+#content table th:nth-child(4) {
+    background-color: #dce6f1;
+    color: #17365d;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: bold;
+}
+
+#content table td:nth-child(4) {
+    background-color: #ffffff;
+    color: #263238;
+    font-family: inherit;
+    font-weight: normal;
+}
